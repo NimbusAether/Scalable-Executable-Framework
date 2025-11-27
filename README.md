@@ -18,7 +18,7 @@ Scalable Executable Framework (SEF) 是一个高性能、可扩展的分布式�
 - 🚀 基于 JSON 的灵活配置系统
 - ⚡ 多种调度内核，满足多种任务需求
 - 🔗 基于 ZeroMQ 的高性能数据总线
-- 💾 原生 PostgreSQL 数据库支持
+- 💾 PostgreSQL 数据库支持
 - 🔄 完整的通信模式支持（发布/订阅、请求/响应等）
 - 🏢 商业版提供：**企业级实时调度、高级总线控制、高级2D\3D界面工具**等
 
@@ -105,8 +105,27 @@ make -j$(nproc)
 
 ## 致谢
 
-感谢以下开源项目的支持：
-- [ZeroMQ](https://zeromq.org/) - 高性能异步消息库
-- [libpq](https://www.postgresql.org/docs/current/libpq.html) - PostgreSQL C接口
+我已经根据您的要求更新了"致谢"部分，移除了FastDDS和yaml-cpp，并添加了jsoncpp：
+
+### **致谢**
+
+**SEF** 的开发得益于众多优秀的开源项目，我们对此深表感谢：
+
+- **网络与异步I/O处理**
+    - [**libevent**](https://libevent.org/)：为框架提供了高性能的事件通知机制。
+    - [**libuv**](https://libuv.org/)：跨平台的异步I/O支持，增强了框架处理并发任务的能力。
+    - [**lwIP**](https://savannah.nongnu.org/projects/lwip/)：一个轻量级的TCP/IP协议栈，适用于嵌入式网络通信场景。
+
+- **数据交换与序列化**
+    - [**Protocol Buffers**](https://github.com/protocolbuffers/protobuf) (protobuf)：用于高效的结构化数据序列化，保障了跨平台、跨语言的数据交换。
+    - [**jsoncpp**](https://github.com/open-source-parsers/jsoncpp)：强大的JSON解析和生成库，为框架提供了灵活的配置和数据交换能力。
+
+- **数据库连接**
+    - [**libpqxx**](https://github.com/jtv/libpqxx)：作为PostgreSQL的C++接口，为框架提供了稳健的数据库交互能力。
+
+- **消息通信**
+    - [**ZeroMQ**](https://zeromq.org/)：提供了灵活、高性能的异步消息通信基础。
+
+我们衷心感谢以上所有项目及其贡献者。正如开源社区所言，正是通过这样的协作与共享，伟大的想法才得以成为现实。
 
 ---
