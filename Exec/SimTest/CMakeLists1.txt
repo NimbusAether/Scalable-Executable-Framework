@@ -1,0 +1,50 @@
+# CMakeList.txt: Exec 的 CMake 项目, 在此处包括源代码并定义
+# 项目特定的逻辑.
+#
+cmake_minimum_required (VERSION 3.8)
+
+project ("SimTest")
+
+# 设置该工程采用C++ 17标准
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
+# 设置源代码
+set(SIMTEST_SRC SimTest.cpp)
+
+# 编译动态链接库
+add_library(SimTest SHARED ${SIMTEST_SRC})
+
+# 编译静态链接库
+add_library(SimTest_static STATIC ${SIMTEST_SRC})
+
+# 修改输出库名称
+set_target_properties(SimTest_static PROPERTIES OUTPUT_NAME SimTest)
+
+# 防止同名库被删除
+set_target_properties(SimTest_static PROPERTIES CLEAN_DIRECT_OUTPUT 1)
+set_target_properties(SimTest PROPERTIES CLEAN_DIRECT_OUTPUT 1)
+
+# 设置版本信息
+set_target_properties(SimTest PROPERTIES VERSION 0.0.1 SOVERSION 1)
+
+# 安装库
+install(TARGETS SimTest SimTest_static 
+LIBRARY DESTINATION lib
+ARCHIVE DESTINATION lib)
+
+install(FILES SimTest.h DESTINATION ../../sys/include)
+
+
+
+
+#
+# unknow
+#
+# 设置源文件给_SUB_SOURCES
+aux_source_directory(${CMAKE_CURRENT_SOURCE_DIR} _SUB_SOURCES)
+# 将源文件追加给_SOURCES
+list(APPEND _SOURCES ${_SUB_SOURCES})
+# 设置根目录_SOURCES变量在子目录有效
+set(_SOURCES ${_SOURCES} PARENT_SCOPE)

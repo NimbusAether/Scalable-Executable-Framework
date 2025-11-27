@@ -14,6 +14,7 @@ Scalable Executable Framework (SEF) 是一个高性能、可扩展的分布式�
 针对要求严苛行业场景的 **商业版本** 由专业团队提供支持，包含增强功能、优先技术支持和定制化服务。
 
 **核心特性**
+- 🖥️ 基于 Windows 系统，操作简便
 - 🚀 基于 JSON 的灵活配置系统
 - ⚡ 多种调度内核，满足多种任务需求
 - 🔗 基于 ZeroMQ 的高性能数据总线
@@ -58,7 +59,9 @@ Scalable Executable Framework (SEF) 是一个高性能、可扩展的分布式�
 ### 安装依赖
 
 ```bash
-
+手动安装
+1. 下载并安装 ZeroMQ for Windows
+2. 下载并安装 PostgreSQL
 ```
 
 ### 构建项目

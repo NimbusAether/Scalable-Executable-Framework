@@ -1,0 +1,4 @@
+#pragma once
+
+${BYTE_ENDIAN}
+${VLD_DEBUG}
