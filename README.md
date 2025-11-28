@@ -122,6 +122,13 @@ make -j$(nproc)
 - **消息通信**
     - [**ZeroMQ**](https://zeromq.org/)：提供了灵活、高性能的异步消息通信基础。
 
+- **日志记录**
+    - [**c-logger**](https://github.com/yksz/c-logger)：提供了轻量级的C语言日志记录功能。
+    - [**log4z**](https://github.com/zsummer/log4z)：提供了轻量级高性能的跨平台日志功能。
+
+- **内存泄漏检测**
+    - [**vld**](https://github.com/KindDragon/vld)：提供了内置的内存泄漏检测功能。
+
 我们衷心感谢以上所有项目及其贡献者。正如开源社区所言，正是通过这样的协作与共享，伟大的想法才得以成为现实。
 
 ---

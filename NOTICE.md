@@ -4,26 +4,12 @@ Scalable-Executable-Framework (SEF) 项目使用了以下优秀的第三方开�
 
 ## 核心依赖库
 
-### jsoncpp
-- **许可证**: MIT License
-- **来源**: https://github.com/open-source-parsers/jsoncpp
-- **用途**: JSON 数据的解析和序列化
-- **包含文件**: 头文件
-- **许可证文件**: `sys/ThirdParty.win/include/json/LICENSE`
-
 ### libevent
 - **许可证**: BSD-3-Clause License
 - **来源**: https://github.com/libevent/libevent
 - **用途**: 事件驱动网络编程
 - **包含文件**: 头文件
 - **许可证文件**: `sys/ThirdParty.win/include/libevent/LICENSE`
-
-### libpqxx
-- **许可证**: BSD-3-Clause License
-- **来源**: https://github.com/jtv/libpqxx
-- **用途**: PostgreSQL C++ 客户端接口
-- **包含文件**: 头文件
-- **许可证文件**: `sys/ThirdParty.win/include/pqxx/LICENSE`
 
 ### libuv
 - **许可证**: MIT License
@@ -46,12 +32,47 @@ Scalable-Executable-Framework (SEF) 项目使用了以下优秀的第三方开�
 - **包含文件**: 头文件
 - **许可证文件**: `sys/ThirdParty.win/include/google/protobuf/LICENSE`
 
+### jsoncpp
+- **许可证**: MIT License
+- **来源**: https://github.com/open-source-parsers/jsoncpp
+- **用途**: JSON 数据的解析和序列化
+- **包含文件**: 头文件
+- **许可证文件**: `sys/ThirdParty.win/include/json/LICENSE`
+
+### libpqxx
+- **许可证**: BSD-3-Clause License
+- **来源**: https://github.com/jtv/libpqxx
+- **用途**: PostgreSQL C++ 客户端接口
+- **包含文件**: 头文件
+- **许可证文件**: `sys/ThirdParty.win/include/pqxx/LICENSE`
+
 ### ZeroMQ
 - **许可证**: LGPL-3.0 License
 - **来源**: https://github.com/zeromq/libzmq
 - **用途**: 高性能消息队列
 - **包含文件**: 头文件
 - **许可证文件**: `sys/ThirdParty.win/include/libzmq/LICENSE`
+
+### c-logger
+- **许可证**: MIT License
+- **来源**: https://github.com/yksz/c-logger
+- **用途**: 轻量级的C语言日志记录
+- **包含文件**: 头文件
+- **许可证文件**: `sys/ThirdParty.win/include/c-logger/LICENSE`
+
+### log4z
+- **许可证**: MIT License
+- **来源**: https://github.com/zsummer/log4z
+- **用途**: 轻量级高性能的跨平台日志库
+- **包含文件**: 头文件
+- **许可证文件**: `sys/ThirdParty.win/include/log4z/LICENSE`
+
+### vld
+- **许可证**: LGPL-2.1 License
+- **来源**: https://github.com/KindDragon/vld
+- **用途**: 内置的内存泄漏检测功能
+- **包含文件**: 头文件
+- **许可证文件**: `sys/ThirdParty.win/include/vld/LICENSE`
 
 ## 许可证兼容性说明
 
@@ -65,7 +86,7 @@ Scalable-Executable-Framework (SEF) 项目使用了以下优秀的第三方开�
 本项目中包含的第三方库以下列方式使用：
 
 1. **头文件形式**: 大部分库仅包含必要的头文件用于编译时引用
-2. **动态链接**: ZeroMQ 等库建议通过动态链接方式使用
+2. **动态链接**: ZeroMQ、VLD 等库建议通过动态链接方式使用
 
 ## 版权声明要求
 
