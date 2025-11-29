@@ -129,6 +129,9 @@ make -j$(nproc)
 - **内存泄漏检测**
     - [**vld**](https://github.com/KindDragon/vld)：提供了内置的内存泄漏检测功能。
 
+- **第三方包管理**
+    - [**vcpkg**](https://github.com/microsoft/vcpkg)：由微软和 C++ 社区维护的免费开源 C/C++ 包管理器。
+
 我们衷心感谢以上所有项目及其贡献者。正如开源社区所言，正是通过这样的协作与共享，伟大的想法才得以成为现实。
 
 ---
