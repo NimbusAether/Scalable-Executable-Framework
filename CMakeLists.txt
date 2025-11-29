@@ -26,7 +26,19 @@ endif()
 set(COMMON_DEBUG_LIBRARY_PATH   ${CMAKE_CURRENT_LIST_DIR}/sys/lib/Debug)
 set(COMMON_RELEASE_LIBRARY_PATH   ${CMAKE_CURRENT_LIST_DIR}/sys/lib/Release)
 set(COMMON_THIRD_DEBUG_LIBRARY_PATH   ${CMAKE_CURRENT_LIST_DIR}/sys/ThirdParty.win/lib/Debug)
-set(COMMON_THIRD_RELEASE_LIBRARY_PATH   ${CMAKE_CURRENT_LIST_DIR}/sys/ThirdParty.win/lib/Release)
+set(COMMON_THIRD_RELEASE_LIBRARY_PATH   
+    ${CMAKE_CURRENT_LIST_DIR}/sys/ThirdParty.win/lib/Release
+    ${CMAKE_CURRENT_LIST_DIR}/sys/ThirdParty.win/lib/Release/c-logger
+    ${CMAKE_CURRENT_LIST_DIR}/sys/ThirdParty.win/lib/Release/google/protobuf
+    ${CMAKE_CURRENT_LIST_DIR}/sys/ThirdParty.win/lib/Release/jsoncpp
+    ${CMAKE_CURRENT_LIST_DIR}/sys/ThirdParty.win/lib/Release/libevent
+    ${CMAKE_CURRENT_LIST_DIR}/sys/ThirdParty.win/lib/Release/libpqxx
+    ${CMAKE_CURRENT_LIST_DIR}/sys/ThirdParty.win/lib/Release/libuv
+    ${CMAKE_CURRENT_LIST_DIR}/sys/ThirdParty.win/lib/Release/libzmq
+    ${CMAKE_CURRENT_LIST_DIR}/sys/ThirdParty.win/lib/Release/log4z
+    ${CMAKE_CURRENT_LIST_DIR}/sys/ThirdParty.win/lib/Release/lwip
+    ${CMAKE_CURRENT_LIST_DIR}/sys/ThirdParty.win/lib/Release/vld
+)
 set(RELEASE_LIBRARY_PATH   ${COMMON_RELEASE_LIBRARY_PATH} ${COMMON_THIRD_RELEASE_LIBRARY_PATH})
 set(DEBUG_LIBRARY_PATH   ${COMMON_DEBUG_LIBRARY_PATH} ${COMMON_THIRD_DEBUG_LIBRARY_PATH})
 

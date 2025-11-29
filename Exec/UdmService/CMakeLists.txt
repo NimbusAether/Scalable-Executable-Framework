@@ -10,6 +10,7 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 message("lib udm source cmake:${CMAKE_CURRENT_LIST_DIR}")
 # 设置包含目录和链接库目录
 include_directories(${CMAKE_CURRENT_LIST_DIR}/../../sys/ThirdParty.win/include)
+include_directories(${CMAKE_CURRENT_LIST_DIR}/../../sys/ThirdParty.win/include/libzmq)
 include_directories(${CMAKE_CURRENT_LIST_DIR}/../../sys/ThirdParty.win/include/libuv)
 include_directories(${CMAKE_CURRENT_LIST_DIR}/../Common/include)
 include_directories(${CMAKE_CURRENT_LIST_DIR}/../udm)
