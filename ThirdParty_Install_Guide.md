@@ -27,8 +27,8 @@
 9. `md build & cd build`
 10. `cmake ..`
 11. 打开libevent.sln，选择Release，编译
-11. 复制`libevent-2.1.12-stable\build\bin\Release`中内容至`Scalable-Executable-Framework\sys\ThirdParty.win\bin\libevent`
-12. 复制`libevent-2.1.12-stable\build\lib\Release`中内容至`Scalable-Executable-Framework\sys\ThirdParty.win\lib\libevent`
+11. 复制`libevent-2.1.12-stable\build\bin\Release`中内容至`Scalable-Executable-Framework\sys\ThirdParty.win\bin\Release\libevent`
+12. 复制`libevent-2.1.12-stable\build\lib\Release`中内容至`Scalable-Executable-Framework\sys\ThirdParty.win\lib\Release\libevent`
 
 ### libuv
 1. 下载libuv-1.51.0.zip，解压
@@ -36,25 +36,25 @@
 3. `md build & cd build`
 4. `cmake ..`
 5. 打开libuv.sln，选择Release，编译
-6. 复制`libuv-1.51.0\build\Release`中的exe和dll内容至`Scalable-Executable-Framework\sys\ThirdParty.win\bin\libuv`
-5. 复制`libuv-1.51.0\build\Release`中的lib内容至`Scalable-Executable-Framework\sys\ThirdParty.win\lib\libuv`
+6. 复制`libuv-1.51.0\build\Release`中的exe和dll内容至`Scalable-Executable-Framework\sys\ThirdParty.win\bin\Release\libuv`
+5. 复制`libuv-1.51.0\build\Release`中的lib内容至`Scalable-Executable-Framework\sys\ThirdParty.win\lib\Release\libuv`
 
 ### lwip
 1. 下载lwip-2.2.1.zip，解压
 2. `cd lwip-2.2.1\contrib\examples\example_app`
 3. 复制lwipcfg.h.example文件为lwipcfg.h
 4. 打开`lwip-2.2.1\contrib\ports\win32\msvc`下lwip_fuzz.sln，选择Release，编译lwip项目
-5. 复制`lwip-2.2.1\contrib\ports\win32\msvc\x64\Release fuzz\lwIP\lwIP.lib`至`Scalable-Executable-Framework\sys\ThirdParty.win\lib\lwip`
+5. 复制`lwip-2.2.1\contrib\ports\win32\msvc\x64\Release fuzz\lwIP\lwIP.lib`至`Scalable-Executable-Framework\sys\ThirdParty.win\lib\Release\lwip`
 
 ### protobuf
 1. `.\vcpkg.exe install protobuf:x64-windows`
-2. 复制`vcpkg\installed\x64-windows\bin`中libprotoc和libprotobuf的dll至`Scalable-Executable-Framework\sys\ThirdParty.win\bin\google\protobuf`
-3. 复制`vcpkg\installed\x64-windows\bin`中libprotoc和libprotobuf的lib至`Scalable-Executable-Framework\sys\ThirdParty.win\lib\google\protobuf`
+2. 复制`vcpkg\installed\x64-windows\bin`中libprotoc和libprotobuf的dll至`Scalable-Executable-Framework\sys\ThirdParty.win\bin\Release\google\protobuf`
+3. 复制`vcpkg\installed\x64-windows\bin`中libprotoc和libprotobuf的lib至`Scalable-Executable-Framework\sys\ThirdParty.win\lib\Release\google\protobuf`
 
 ### jsoncpp
 1. `.\vcpkg.exe install jsoncpp`
-2. 复制`vcpkg\installed\x64-windows\bin`中jsoncpp.dll至`Scalable-Executable-Framework\sys\ThirdParty.win\bin\jsoncpp`
-3. 复制`vcpkg\installed\x64-windows\bin`中jsoncpp.lib至`Scalable-Executable-Framework\sys\ThirdParty.win\lib\jsoncpp`
+2. 复制`vcpkg\installed\x64-windows\bin`中jsoncpp.dll至`Scalable-Executable-Framework\sys\ThirdParty.win\bin\Release\jsoncpp`
+3. 复制`vcpkg\installed\x64-windows\bin`中jsoncpp.lib至`Scalable-Executable-Framework\sys\ThirdParty.win\lib\Release\jsoncpp`
 
 ### libpqxx
 1. 安装postgreSQL
@@ -63,8 +63,8 @@
 4. 注意其中D:\Apps\PostgreSQL\18要替换成你安装postgreSQL的路径：
 `cmake -D CMAKE_BUILD_TYPE=Release -DSKIP_BUILD_TEST=on -DBUILD_SHARED_LIBS=ON -DPostgreSQL_ROOT=D:\Apps\PostgreSQL\18 ..`
 5. 打开libpqxx.sln，编译pqxx
-6. 复制`libpqxx-7.10.1\build\src\Release`中pqxx.dll至`Scalable-Executable-Framework\sys\ThirdParty.win\bin\libpqxx`
-7. 复制`libpqxx-7.10.1\build\src\Release`中pqxx.lib至`Scalable-Executable-Framework\sys\ThirdParty.win\lib\libpqxx`
+6. 复制`libpqxx-7.10.1\build\src\Release`中pqxx.dll至`Scalable-Executable-Framework\sys\ThirdParty.win\bin\Release\libpqxx`
+7. 复制`libpqxx-7.10.1\build\src\Release`中pqxx.lib至`Scalable-Executable-Framework\sys\ThirdParty.win\lib\Release\libpqxx`
 
 ### zmqpp
 1. 下载zeromq-4.3.5.zip，解压
@@ -72,8 +72,8 @@
 3. `md build & cd build`
 4. `cmake -DCMAKE_POLICY_VERSION_MINIMUM='3.5' ..`
 5. 打开ZeroMQ.sln，选择Release，编译
-6. 复制`zeromq-4.3.5\build\bin\Release\libzmq-v143-mt-4_3_5.dll`至`Scalable-Executable-Framework\sys\ThirdParty.win\bin\libzmq`
-7. 复制`zeromq-4.3.5\build\lib\Release中libzmq`相关lib至`Scalable-Executable-Framework\sys\ThirdParty.win\lib\libzmq`
+6. 复制`zeromq-4.3.5\build\bin\Release\libzmq-v143-mt-4_3_5.dll`至`Scalable-Executable-Framework\sys\ThirdParty.win\bin\Release\libzmq`
+7. 复制`zeromq-4.3.5\build\lib\Release中libzmq`相关lib至`Scalable-Executable-Framework\sys\ThirdParty.win\lib\Release\libzmq`
 
 ### c-logger
 1. 下载c-logger-0.4.1.zip，解压
@@ -81,18 +81,18 @@
 3. `md build & cd build`
 4. `cmake ..`
 5. 打开logger.sln，选择Release，编译
-6. 复制`c-logger-0.4.1\build\Release\logger.dll`至`Scalable-Executable-Framework\sys\ThirdParty.win\bin\c-logger`
-7. 复制`c-logger-0.4.1\build\Release\logger.lib`至`Scalable-Executable-Framework\sys\ThirdParty.win\lib\c-logger`
+6. 复制`c-logger-0.4.1\build\Release\logger.dll`至`Scalable-Executable-Framework\sys\ThirdParty.win\bin\Release\c-logger`
+7. 复制`c-logger-0.4.1\build\Release\logger.lib`至`Scalable-Executable-Framework\sys\ThirdParty.win\lib\Release\c-logger`
 
 ### log4z
 1. 下载log4z-3.4.0.zip，解压
 2. `cd log4z-3.4.0`
 3. `cd vc2015`
 4. 打开project.sln，选择Release，编译
-5. 复制`log4z-3.4.0\lib`下log4z_win64相关lib至`Scalable-Executable-Framework\sys\ThirdParty.win\lib\log4z`
+5. 复制`log4z-3.4.0\lib`下log4z_win64相关lib至`Scalable-Executable-Framework\sys\ThirdParty.win\lib\Release\log4z`
 
 ### vld
 1. 安装vld-2.5.1-setup.exe
 2. 打开安装路径
-3. 复制`Visual Leak Detector\bin\Win64`下内容至`Scalable-Executable-Framework\sys\ThirdParty.win\bin\vld`
-4. 复制`Visual Leak Detector\lib\Win64`下内容至`Scalable-Executable-Framework\sys\ThirdParty.win\lib\vld`
+3. 复制`Visual Leak Detector\bin\Win64`下内容至`Scalable-Executable-Framework\sys\ThirdParty.win\bin\Release\vld`
+4. 复制`Visual Leak Detector\lib\Win64`下内容至`Scalable-Executable-Framework\sys\ThirdParty.win\lib\Release\vld`
