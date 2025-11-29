@@ -59,9 +59,7 @@ Scalable Executable Framework (SEF) 是一个高性能、可扩展的分布式�
 ### 安装依赖
 
 ```bash
-手动安装
-1. 下载并安装 ZeroMQ for Windows
-2. 下载并安装 PostgreSQL
+请查看 ThirdParty_Install_Guide.md
 ```
 
 ### 构建项目
@@ -71,7 +69,6 @@ git clone https://github.com/your-username/Scalable-Executable-Framework.git
 cd Scalable-Executable-Framework
 mkdir build && cd build
 cmake ..
-make -j$(nproc)
 ```
 
 ## 核心组件
