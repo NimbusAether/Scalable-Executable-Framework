@@ -11,8 +11,7 @@
 	"initializeTimeout":60,
 	"shutdownTimeout":10,
 	"snapshotTimeout":600,
-	"prefixPath":"D:\\Projects",
-
+	"prefixPath":"C:\\Users\\Wesley\\Projects\\NimbusAether\\OpenSource_Git_Projects\\Scalable-Executable-Framework",
 
 	"logInfo":{
 	/*	log level:
@@ -24,40 +23,17 @@
 		Alarm = 5,
 		Fatal = 6
 	*/
-		"level":5,
-		"path":"sys\/lib\/releaseConf"
+		"level":2,
+		"path":"sys\\log"
 	},
 	
 	"udmServiceInfo":[
-	/*
-		"protocol": tcp 0
-					udp 1
-					ipc 2
-					
-		type:		SimpleSingleton = 0,
-					ThreadSafetySingleton = 1,
-					SharedMemory = 2,
-					MessageQueue = 3,
-					Semaphore = 4,
-					SocketAPI = 5,
-					ZeroMQ = 6,  				*ZeroMQ建议使用tcp方式，不支持udp的订阅发布，windows下不支持ipc*
-					FastDDS = 7
-	*/
-	
 		{
 			"type":6,
 			"address":[
 				{"protocol":0,"ip":"127.0.0.1", "port":10000}
 			]
-		}/*,
-		
-		{
-			"type":5,
-			"address":[
-				{"protocol":1, "isLocal":1,"ip":"127.0.0.1", "port":20000}
-			]
-		}	
-		*/
+		}
 	],
 	"udmClientInfo":{
 			"type":6,
@@ -77,7 +53,7 @@
 			"name":"group1",
 			"frequency":100,
 			"elements":[
-			{"name":"element1", "type":"SEF::Elements::Element1::Element1", "configFile":"sys\/lib\/releaseConf\/element1.json","dllFile":"sys\/lib\/Release\/elementTestAPI_shared.dll"}
+			{"name":"element1", "type":"SEF::Elements::Element1::Element1", "configFile":"sys\\conf\\element1.json","dllFile":"sys\\lib\\Release\\elementTestAPI.dll"}
 			]
 		}
 	]
