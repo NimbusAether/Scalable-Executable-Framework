@@ -11,7 +11,7 @@
 	"initializeTimeout":60,
 	"shutdownTimeout":10,
 	"snapshotTimeout":600,
-	"prefixPath":"C:\\Users\\Wesley\\Projects\\NimbusAether\\OpenSource_Git_Projects\\Scalable-Executable-Framework",
+	"prefixPath":"D:\\Your_Path\\Scalable-Executable-Framework",
 
 	"logInfo":{
 	/*	log level:
