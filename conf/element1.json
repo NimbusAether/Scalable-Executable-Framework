@@ -69,7 +69,7 @@
 	
 		{
 			"type":7,
-			"configFile":"D:\/project\/technology-integration-core-windows\/conf\/ddsxml.xml",
+			"configFile":"ConfigFilePath",
 		},*/
 		{
 			"type":6,
