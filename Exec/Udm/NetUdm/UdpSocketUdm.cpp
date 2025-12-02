@@ -6,7 +6,7 @@
 #include "UdmJsonRefMsg.h"
 #include "SafeQueue.h"
 #include "log.h"
-#include "topicList.pb.h"
+//#include "topicList.pb.h"
 #include "internal.h"
 
 using SEF::Udm::UdpSocketUdm;

@@ -1,0 +1,2 @@
+..\sys\ThirdParty.win\bin\google\protobuf\protoc.exe --proto_path=./ --cpp_out=./ topicList.proto
+..\sys\ThirdParty.win\bin\google\protobuf\protoc.exe --proto_path=./ --cpp_out=./ udmMessage.proto

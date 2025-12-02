@@ -1,0 +1,13 @@
+syntax="proto3";
+package UDM;
+
+message UDMMessage {
+	int32	message_type			=	1;
+	string	topicName				=	2;
+	string	variableName			=	3;
+	string	variableUnit				=	4;    
+	string	sourceName				=	5;
+	int32	lockStat					=	6;
+	uint64	timestamp				=	7;
+	bytes	value					=	8;
+}
