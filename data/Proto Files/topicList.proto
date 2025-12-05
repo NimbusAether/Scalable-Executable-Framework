@@ -1,0 +1,14 @@
+syntax="proto3";
+package UDM;
+
+message Node {
+	string	topicName	=	1;
+	string	Name		=	2;
+	int32		type = 3;
+	bool		locked = 4;
+}
+
+message topicList{
+	int32		type = 1;
+	repeated Node 	nodes = 2;
+}

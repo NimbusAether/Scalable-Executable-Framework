@@ -1,0 +1,90 @@
+{
+	"outputs":{
+		"intVec":[
+			{"topic":"element1", "varName":"Int", "varUnit":"varUnit", "value":0}
+		],
+		"int64Vec":[
+			{"topic":"element1", "varName":"Int64", "varUnit":"varUnit", "value":0}
+		],		
+		"boolVec":[
+			{"topic":"element1", "varName":"Bool", "varUnit":"", "value":0}
+		],
+		"floatVec":[
+			{"topic":"element1", "varName":"Float", "varUnit":"varUnit", "value":0.00}
+		],
+		"doubleVec":[
+			{"topic":"element1", "varName":"Double", "varUnit":"varUnit", "value":0.00}
+		],		
+		"stringVec":[
+			{"topic":"element1", "varName":"String", "varUnit":"", "value":""}
+		],		
+	},
+	"inputs":{
+		"intVec":[
+			{"topic":"element2", "varName":"Int", "varUnit":"varUnit", "value":0}
+		],
+		"int64Vec":[
+			{"topic":"element2", "varName":"Int64", "varUnit":"varUnit", "value":0}
+		],		
+		"boolVec":[
+			{"topic":"element2", "varName":"Bool", "varUnit":"", "value":0}
+		],
+		"floatVec":[
+			{"topic":"element2", "varName":"Float", "varUnit":"varUnit", "value":0.00}
+		],
+		"doubleVec":[
+			{"topic":"element2", "varName":"Double", "varUnit":"varUnit", "value":0.00}
+		],		
+		"stringVec":[
+			{"topic":"element2", "varName":"String", "varUnit":"", "value":""}
+		],		
+	},	
+	"requestItems":{
+		"frequency":100,
+		"publish":[
+				{"topic":"element2", "queueName":"queueName", "requestName":"requestName"},			
+				{"topic":"element3", "queueName":"queueName", "requestName":"requestName"},			
+				{"topic":"element4", "queueName":"queueName", "requestName":"requestName"},			
+				
+		],
+		"subscribe":[
+				{"topic":"element1", "queueName":"queueName", "requestName":"requestName"},
+		],		
+	},		
+
+	"udmConfig":[
+	/*
+		"protocol": tcp 0
+					udp 1
+					ipc 2
+					
+		type:		SimpleSingleton = 0,
+					ThreadSafetySingleton = 1,
+					SharedMemory = 2,
+					MessageQueue = 3,
+					Semaphore = 4,
+					SocketAPI = 5,
+					ZeroMQ = 6,  				*ZeroMQ建议使用tcp方式，不支持udp的订阅发布，windows下不支持ipc*
+					FastDDS = 7
+	
+		{
+			"type":7,
+			"configFile":"ConfigFilePath",
+		},*/
+		{
+			"type":6,
+			"address":[
+				{"protocol":0, "ip":"127.0.0.1", "port":10000}
+			]
+		}
+	],
+
+
+	"dbHost":"localhost",
+	"dbPort":"5432",
+	"dbName":"hostdb",
+	"dbUser":"postgresql",
+	"dbPassword":"postgre",
+	"dbTimeOut":"30",
+
+}
